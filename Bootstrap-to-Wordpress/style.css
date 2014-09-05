@@ -1,15 +1,16 @@
 /*
 Theme Name: Bootstrap to WordPress
-Theme URI: 
-Author: ahmad abdolsaheb
-Author URI: 
-Description: simple Bootstrap to WordPress theme with three columns
+Theme URI: http://wptreehouse.com/from-bootstrap-to-wordpress
+Author: Zac Gordon
+Author URI: http://wp.zacgordon.com/
+Description: Example theme for Treehouse course on how to convert static Bootstrap site into dynamic WordPress theme
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bootstrap-to-wp
 
 This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 body {
@@ -63,5 +64,89 @@ body {
 .current-menu-parent .current-menu-item a {
 	color: #fff;
 	font-weight: bold;
+}
+
+.sidebar { 
+	margin-top: 40px;
+	color: #444;
+}
+
+.sidebar h3 {
+	color: #888;
+}
+
+.widget {
+	margin: 10px 0 30px;
+}
+
+article.post {
+	margin: 20px 0 40px;
+}
+
+.featured-image img,
+.portfolio-piece img,
+.portfolio-image img {
+	max-width: 100%;
+}
+
+.prev-next {
+	font-size: 24px;
+	margin-top: 30px;
+	text-align: right;
+}
+
+@media (max-width:540px) {
+	.portfolio-piece h4 {
+		font-size: .8em;
+	}
+	.prev-next {
+		margin-top: 15px;
+		font-size: 18px;
+	}
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
 }
 
