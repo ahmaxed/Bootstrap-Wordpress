@@ -78,45 +78,31 @@ function custom_wp_trim_excerpt($text) {
     $text = apply_filters('the_content', $text); // Filters
     $text = str_replace(']]>', ']]&gt;', $text); // Replace
     
-    $excerpt_length = apply_filters('excerpt_length', 60);
-    $postcustom = get_post_custom_keys();
-    $videoavail = 0;
-    $firstvid = null;
-    if ($postcustom){
 
+    $excerpt_length = apply_filters('excerpt_length', 66); // Length
+    $firstvid = null;
+    $postcustom = get_post_custom_keys();
+    if ($postcustom){
       $i = 1;
-      
       foreach ($postcustom as $key){
         if (strpos($key,'oembed')){
-        	
           foreach (get_post_custom_values($key) as $video){
             if ($i == 1){
-            	$firstvid = $video;	
-            	$excerpt_length = apply_filters('excerpt_length', 6);
-            	$videoavail = 2;
-
+            	$firstvid = $video;
+              	$excerpt_length = apply_filters('excerpt_length', 6);
             }
           $i++;
           }
         }  
       }
     }
-
-     // Length
-    $excerpt_more = apply_filters('excerpt_more', ' ' . '<a class="readmore" href="'. get_permalink() .'">Read More &raquo;</a>');
-    
+    $excerpt_more = apply_filters('excerpt_more', ' ' . '<a class="readmore" href="'. get_permalink() .'">&raquo;</a>');
     $text = wp_trim_words( $text, $excerpt_length, $excerpt_more );
     
     // Use First Video as Excerpt
-   
-   	if ( $firstvid != null){
-   		$text = $firstvid.$text;
-   	}
-            	
-            	
-              
-    
-    
+    if ( $firstvid != null){
+      $text = $firstvid.$text;
+    }
     
   }
   return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
@@ -141,7 +127,7 @@ add_action( 'wp_enqueue_scripts', 'my_scripts' );
 function fitvids_script() { 
 echo '<script type="text/javascript">
 jQuery(document).ready(function($) {     
-$(".post").fitVids(); 
+$(".row").fitVids(); 
 });
 </script>';
 } 
