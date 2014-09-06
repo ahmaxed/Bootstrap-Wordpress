@@ -37,6 +37,30 @@ body {
 
 }
 
+/*/ carosel */
+.carousel-caption {
+	color : black;
+	position:static;
+	padding-bottom: 50px;
+	font-weight: 500;
+	text-shadow: none;
+
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+.left-align {
+  text-align: left
+}
+
+/*/ carosel */
 .sub-menu li {
 	margin-bottom: 10px;
 	list-style: none;

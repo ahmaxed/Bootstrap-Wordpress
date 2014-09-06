@@ -96,7 +96,7 @@ function custom_wp_trim_excerpt($text) {
         }  
       }
     }
-    $excerpt_more = apply_filters('excerpt_more', ' ' . '<a class="readmore" href="'. get_permalink() .'">&raquo;</a>');
+    $excerpt_more = apply_filters('excerpt_more', ' ' . '<a class="readmore" href="'. get_permalink() .'">MORE &raquo;</a>');
     $text = wp_trim_words( $text, $excerpt_length, $excerpt_more );
     
     // Use First Video as Excerpt
