@@ -12,10 +12,28 @@ Text Domain: bootstrap-to-wp
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+.bg {
+	background-image: url(images/bg.jpg);
+	 
+	  background-repeat: no-repeat;
+	 position: absolute; 
+  	background-position: center;
+	 min-width: 100%;
+  	min-height: 800px;
+	 z-index: -1;
+}
+
+
 
 body {
+	
   padding-top: 50px;
   padding-bottom: 20px;
+ 
+}
+
+.navbar-inner {
+    background:transparent;
 }
 
 .admin-bar .navbar-fixed-top {
@@ -41,10 +59,21 @@ body {
 .carousel-caption {
 	color : black;
 	position:static;
-	padding-bottom: 50px;
 	font-weight: 500;
 	text-shadow: none;
+	margin-top: 200px;
+	vertical-align: middle;
 
+
+}
+
+.carousel-inner {
+	vertical-align: middle;
+}
+
+#carousel-example-generic {
+	vertical-align: middle;
+	height: 400px;
 }
 
 .carousel-indicators li {
@@ -57,10 +86,29 @@ body {
 }
 
 .left-align {
-  text-align: left
+  text-align: left;
 }
 
+a.right.carousel-control{
+ 	color:black;
+}
+
+a.left.carousel-control{
+ 	color:black;
+}
+
+.carousel-indicators{
+	margin-bottom: 0px;
+	margin-top: 30px;
+} 
+
 /*/ carosel */
+.reading-field{
+
+	background-color: rgba(70,70,70,.10);
+	border-top-left-radius:.5em;
+	border-top-right-radius:.5em;
+}
 .sub-menu li {
 	margin-bottom: 10px;
 	list-style: none;

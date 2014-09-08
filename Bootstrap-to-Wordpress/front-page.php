@@ -1,4 +1,17 @@
 <?php get_header(); ?>
+
+    <!-- Main jumbotron for a pfrimary marketing message or call to action -->
+    <!--  <div class="jumbotron">
+      <div class="container">
+      
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+          <?php the_content(); ?>
+    
+        <?php endwhile; endif; ?>
+
+      </div>
+    </div> --> 
     
     <?php
 
@@ -32,16 +45,16 @@
   
           <div class="carousel-caption"> <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
-
-            <div class="container">
-              <!-- Example row of columns -->
+            <button type="button" class="btn btn-default">Read More</button>
+            <!-- <div class="container">
+              
               <div class="row">
                 <div class="col-md-6 col-md-offset-3 left-align">
-            <?php the_excerpt(); ?>
+                  <?php the_excerpt(); ?>
 
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
 
         </div>
@@ -71,8 +84,27 @@
 
       </div>
     </div> --> 
+    <div class="container">         
+      <div class="row">
+        <div class="col-md-4">
+          <h2>social<h2>
+        </div>
+    
+      <div class="row">
+        <div class="col-md-4 reading-field">
 
-    <div class="container">
+          <h2>Recent Posts<h2>
+
+        </div>
+     
+      <div class="row">
+        <div class="col-md-4">
+          <h2>subscribe<h2>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container reading-field">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
