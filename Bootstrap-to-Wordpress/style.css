@@ -61,19 +61,25 @@ body {
 	position:static;
 	font-weight: 500;
 	text-shadow: none;
-	margin-top: 200px;
-	vertical-align: middle;
+	margin-top: auto;
 
+	vertical-align: middle;
+	text-align: center;
+	
 
 }
 
+
 .carousel-inner {
 	vertical-align: middle;
+
+	
 }
 
 #carousel-example-generic {
 	vertical-align: middle;
 	height: 400px;
+	padding:  6% 0;   
 }
 
 .carousel-indicators li {

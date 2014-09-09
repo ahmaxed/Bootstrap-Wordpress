@@ -43,7 +43,7 @@
         <div class="item <?php if( $the_query->current_post == 0 ):?>active<?php endif; ?>">
 
   
-          <div class="carousel-caption"> <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+          <div class="carousel-caption flex"> <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
             <button type="button" class="btn btn-default">Read More</button>
             <!-- <div class="container">
