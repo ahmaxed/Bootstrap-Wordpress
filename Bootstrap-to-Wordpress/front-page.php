@@ -43,7 +43,17 @@
         <div class="item <?php if( $the_query->current_post == 0 ):?>active<?php endif; ?>">
 
   
-          <div class="carousel-caption flex"> <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+          <div class="carousel-caption flex"> <h1><a href="<?php the_permalink(); ?>">
+
+            <div class="container">         
+              <div class="row">
+                <div class="col-md-12">
+
+            <?php the_title(); ?>
+                </div> 
+              </div> 
+            </div>         
+          </a></h1>
 
             <button type="button" class="btn btn-default">Read More</button>
             <!-- <div class="container">
@@ -89,15 +99,11 @@
         <div class="col-md-4">
           <h2>social<h2>
         </div>
-    
-      <div class="row">
+      
         <div class="col-md-4 reading-field">
-
           <h2>Recent Posts<h2>
-
         </div>
      
-      <div class="row">
         <div class="col-md-4">
           <h2>subscribe<h2>
         </div>
@@ -166,9 +172,4 @@
           <?php if ( dynamic_sidebar( 'front-right' ) ); ?>
 
         </div>
-
-
-
-    
-
 <?php get_footer(); ?>

@@ -17,10 +17,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	 
 	  background-repeat: no-repeat;
 	 position: absolute; 
+	 
   	background-position: center;
 	 min-width: 100%;
   	min-height: 800px;
 	 z-index: -1;
+	margin-top: -60px 
 }
 
 
@@ -72,7 +74,7 @@ body {
 
 .carousel-inner {
 	vertical-align: middle;
-	min-height: 200px
+	min-height: 350px
 
 	
 }
@@ -112,10 +114,41 @@ a.left.carousel-control{
 /*/ carosel */
 .reading-field{
 
-	background-color: rgba(70,70,70,.10);
+	background-color: rgba(255,255,255,.60);
 	border-top-left-radius:.5em;
 	border-top-right-radius:.5em;
 }
+
+.jumbotron{
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+.main-logo{
+	width:124px;
+	height:40px;
+	margin-top: 5px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-image: url(images/logo.png);
+	background-size: 100%;
+
+}
+/*/ --------------------------------------------navbar*/
+.navbar-default {
+     background-color: rgba(255,255,255,.00);
+    border-color: rgba(255,255,255,.00);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 1.2em;
+}
+
 .sub-menu li {
 	margin-bottom: 10px;
 	list-style: none;
@@ -134,15 +167,18 @@ a.left.carousel-control{
 	color: #fff;	
 }	
 
-.current-menu-item > a, .current-menu-parent > a {
-	background: #000;	
-}
 .current-menu-parent li a {
 	background: inherit;
 }
-.current-menu-parent .current-menu-item a {
-	color: #fff;
-	font-weight: bold;
+
+.current-menu-item a {
+	color:green;
+	background-color: rgba(0,0,0,.60);
+	border-radius: 9px;
+}
+
+.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+  color:#720B87;
 }
 
 .sidebar { 
@@ -228,4 +264,6 @@ article.post {
     width: 50%; /* 6 columns */
   }
 }
+
+
 
