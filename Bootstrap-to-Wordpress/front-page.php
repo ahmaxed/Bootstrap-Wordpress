@@ -55,7 +55,9 @@
             </div>         
           </a></h1>
 
-            <button type="button" class="btn btn-default">Read More</button>
+            <a class="readmore" href="<?php the_permalink(); ?>"><button type="button" class="btn btn-default">Read More</button></a>
+
+            
             <!-- <div class="container">
               
               <div class="row">
@@ -96,66 +98,67 @@
     </div> --> 
     <div class="container">         
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <h2>social<h2>
         </div>
-      
-        <div class="col-md-4 reading-field">
-          <h2>Recent Posts<h2>
-        </div>
-     
-        <div class="col-md-4">
+        <div class="col-md-6">
           <h2>subscribe<h2>
         </div>
       </div>
     </div> 
 
+    
+
     <div class="container reading-field">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-
+          <div><h2>Books<h2></div>
           <?php
           $postslist = get_posts('numberposts=1');
           foreach ($postslist as $post) :
             setup_postdata($post);
           ?>
-          <div class="post"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <?php the_excerpt(); ?>
+          <div class="post"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <p> <?php the_excerpt(); ?> <p>
 
           </div>
           <?php endforeach ?>
 
         </div>
         <div class="col-md-4">
-          
+          <div><h2>Recent<h2></div>
           <?php
-          $postslist = get_posts('numberposts=1&category='.$cat_id.'&offset=1');
+          $postslist = get_posts('numberposts=2&category=-5');
           foreach ($postslist as $post) :
             setup_postdata($post);
           ?>
-          <div class="post"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <?php the_excerpt(); ?>
+          <div class="post"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            
+            <p> <?php the_excerpt(); ?> <p>
 
           </div>
           <?php endforeach ?>
 
         </div>
         <div class="col-md-4">
-          
+          <div><h2>Media<h2></div>
           <?php
-          $postslist = get_posts('numberposts=1&category='.$cat_id.'&offset=2');
+          $postslist = get_posts('numberposts=2&offset=0&category=5');
           foreach ($postslist as $post) :
             setup_postdata($post);
           ?>
-         <div class="post"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+          <div class="post"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           
-            <?php the_excerpt(); ?>
+            <p> <?php the_excerpt(); ?> <p>
+        
         </div>
         <?php endforeach ?>
 
         </div>
       </div>
+      
+
       <div class="row">
         <div class="col-md-4">
 

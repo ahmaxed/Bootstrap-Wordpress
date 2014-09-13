@@ -16,6 +16,8 @@
   </head>
 
   <body <?php body_class(); ?>>
+
+    <div class="gradient"></div>
     <div class= "bg"></div>
     <div class="navbar navbar-default  " role="navigation">
       <div class="container">

@@ -21,7 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   	background-position: center;
 	 min-width: 100%;
   	min-height: 800px;
-	 z-index: -1;
+	 z-index: -2;
 	margin-top: -60px 
 }
 
@@ -173,13 +173,14 @@ a.left.carousel-control{
 
 .current-menu-item a {
 	color:green;
-	background-color: rgba(0,0,0,.60);
-	border-radius: 9px;
+	background-color: rgba(0,0,0,.20);
+	border-radius: 5px;
+	text-align: center;
+
+
 }
 
-.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
-  color:#720B87;
-}
+
 
 .sidebar { 
 	margin-top: 40px;
@@ -207,17 +208,14 @@ article.post {
 .prev-next {
 	font-size: 24px;
 	margin-top: 30px;
-	text-align: right;
+	text-align: left;
 }
 
 @media (max-width:540px) {
 	.portfolio-piece h4 {
 		font-size: .8em;
 	}
-	.prev-next {
-		margin-top: 15px;
-		font-size: 18px;
-	}
+	
 }
 
 /*
