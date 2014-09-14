@@ -140,8 +140,8 @@ a.left.carousel-control{
 }
 /*/ --------------------------------------------navbar*/
 .navbar-default {
-     background-color: rgba(255,255,255,.00);
-    border-color: rgba(255,255,255,.00);
+     background-color: rgba(0,0,0,.00);
+    border-color: rgba(0,0,0,.00);
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -172,14 +172,26 @@ a.left.carousel-control{
 }
 
 .current-menu-item a {
-	color:green;
 	background-color: rgba(0,0,0,.20);
 	border-radius: 5px;
-	text-align: center;
-
-
 }
 
+.navbar-toggle{
+	background-color: rgb(221, 221, 221);
+}
+
+.form-control{
+	max-width: 200px;
+}
+
+.search{
+	max-width:100px;
+}
+
+.center{
+	text-align: center;
+	position: center;
+}
 
 
 .sidebar { 
@@ -211,6 +223,11 @@ article.post {
 	text-align: left;
 }
 
+.book-main{
+
+max-height: 200px;
+}
+
 @media (max-width:540px) {
 	.portfolio-piece h4 {
 		font-size: .8em;
@@ -222,7 +239,7 @@ article.post {
  * Off Canvas
  * --------------------------------------------------
  */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: @screen-sm-min) {
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;

@@ -98,11 +98,21 @@
     </div> --> 
     <div class="container">         
       <div class="row">
-        <div class="col-md-6">
-          <h2>social<h2>
+        <div class="col-md-6 center">
+          
+            <h1><a href="#"><i class="fa fa-facebook-square"></i></a> 
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-envelope-square"></i></a> </h1>
+            
         </div>
         <div class="col-md-6">
-          <h2>subscribe<h2>
+          <form class="navbar-form navbar-left center" role="search">
+            <div class="form-group col-lg-12 ">
+              <input type="text" class="form-control col-xs-12" placeholder="Your Email Address">
+              <button type="submit" class="btn btn-primary col-xs-12">Subscribe to Newsletter</button>
+            </div>
+            
+          </form>
         </div>
       </div>
     </div> 
@@ -114,14 +124,25 @@
       <div class="row">
         <div class="col-md-4">
           <div><h2>Books<h2></div>
+
+          <?php $args=array('post_type'=>'testimonials', 'orderby'=>'rand', 'posts_per_page'=>'2'); ?>
           <?php
-          $postslist = get_posts('numberposts=1');
+          $postslist = get_posts('post_type=book&orderby=rand&numberposts=2');
           foreach ($postslist as $post) :
             setup_postdata($post);
           ?>
-          <div class="post"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <p> <?php the_excerpt(); ?> <p>
+          <div class="post col-md-12 ">
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          </div>
 
+          <div class="col-md-12 portfolio-image ">
+          <?php
+            $thumbnail_id = get_post_thumbnail_id(); 
+            $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
+          ?>
+
+          <p><a href="<?php the_permalink(); ?>"><img  class="book-main" src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title();?> graphic"></a></p>
+         
           </div>
           <?php endforeach ?>
 

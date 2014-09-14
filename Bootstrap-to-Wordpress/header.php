@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/images/favicon.ico">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <title>
       <?php wp_title( '|', true, 'right' ); ?>
@@ -49,9 +50,9 @@
 
           <form  class="navbar-form navbar-right" role="form" action="<?php bloginfo('siteurl'); ?>/" id="searchform" method="get">
               <label for="s" class="sr-only">Search</label>
-              <div class="form-group">
-                  <input type="text" class="form-control" id="s" name="s" placeholder="Search"<?php if ( $search_terms !== '' ) { echo ' value="' . $search_terms . '"'; } ?> />
-                  <button type="submit" class="btn btn-default"><i class="icon-search"></i></button>   
+              <div class="form-group  row">
+                  <input type="text" class="form-control col-xs-8 " id="s" name="s" placeholder="Search"<?php if ( $search_terms !== '' ) { echo ' value="' . $search_terms . '"'; } ?> />
+                  <button type="submit" class="btn btn-default col-xs-4 "><i class="icon-search"></i></button>   
               </div> <!-- .input-group -->
           </form>
 
