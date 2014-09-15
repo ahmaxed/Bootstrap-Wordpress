@@ -25,8 +25,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	margin-top: -60px 
 }
 
-
-
 body {
 	
   padding-top: 50px;
@@ -42,20 +40,7 @@ body {
 	margin-top: 30px;
 }
 
-@media (min-width:768px) {
-	.sub-menu {
-		display: none;
-		position: absolute;
-		background: #222;
-		padding: 10px 15px;
-		width: 200px;		
-	}
 
-	li:hover .sub-menu {
-		display: block;
-	}
-
-}
 
 /*/ carosel */
 .carousel-caption {
@@ -111,13 +96,16 @@ a.left.carousel-control{
 	margin-top: 30px;
 } 
 
-/*/ carosel */
+
+
+/*/ theme */
 .reading-field{
 
 	background-color: rgba(255,255,255,.60);
 	border-top-left-radius:.5em;
 	border-top-right-radius:.5em;
 }
+
 
 .jumbotron{
 	background-color: rgba(0, 0, 0, 0);
@@ -138,6 +126,8 @@ a.left.carousel-control{
 	background-size: 100%;
 
 }
+
+
 /*/ --------------------------------------------navbar*/
 .navbar-default {
      background-color: rgba(0,0,0,.00);
@@ -180,19 +170,14 @@ a.left.carousel-control{
 	background-color: rgb(221, 221, 221);
 }
 
-.form-control{
+.forma{
 	max-width: 200px;
-}
-
-.search{
-	max-width:100px;
 }
 
 .center{
 	text-align: center;
 	position: center;
 }
-
 
 .sidebar { 
 	margin-top: 40px;
@@ -239,6 +224,11 @@ max-height: 200px;
  * Off Canvas
  * --------------------------------------------------
  */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
 @media screen and (max-width: @screen-sm-min) {
   .row-offcanvas {
     position: relative;
@@ -247,7 +237,13 @@ max-height: 200px;
             transition: all .25s ease-out;
   }
 
-  .row-offcanvas-right {
+ .navbar-header {
+        text-align: center;
+    }
+    .navbar-toggle {
+        float: none;
+    }
+  /*.row-offcanvas-right {
     right: 0;
   }
 
@@ -257,28 +253,51 @@ max-height: 200px;
 
   .row-offcanvas-right
   .sidebar-offcanvas {
-    right: -50%; /* 6 columns */
+    right: -50%; 
   }
 
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -50%; /* 6 columns */
+    left: -50%; 
   }
 
   .row-offcanvas-right.active {
-    right: 50%; /* 6 columns */
+    right: 50%; 
   }
 
   .row-offcanvas-left.active {
-    left: 50%; /* 6 columns */
+    left: 50%; 
   }
 
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 50%; /* 6 columns */
-  }
+    width: 50%; 
+  }*/
 }
 
+/*@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;		
+	}
 
+	li:hover .sub-menu {
+		display: block;
+	}
+
+}*/
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (max-width: @screen-md-min){
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (max-width: @screen-lg-min){
+
+}
 

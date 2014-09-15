@@ -29,8 +29,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a> -->
-          <a class="navbar-brand main-logo" href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a>
+          
+          <div class="row">
+            <a class="navbar-brand main-logo " href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a>
+          </div>
+          
 
 
 
@@ -50,18 +53,11 @@
 
           <form  class="navbar-form navbar-right" role="form" action="<?php bloginfo('siteurl'); ?>/" id="searchform" method="get">
               <label for="s" class="sr-only">Search</label>
-              <div class="form-group  row">
-                  <input type="text" class="form-control col-xs-8 " id="s" name="s" placeholder="Search"<?php if ( $search_terms !== '' ) { echo ' value="' . $search_terms . '"'; } ?> />
-                  <button type="submit" class="btn btn-default col-xs-4 "><i class="icon-search"></i></button>   
+              <div class="form-group  row center">
+                  <input type="text" class="form-control forma col-xs-10 " id="s" name="s" placeholder="Search"<?php if ( $search_terms !== '' ) { echo ' value="' . $search_terms . '"'; } ?> />
+                  <button type="submit" class="btn  search btn-default col-xs-2 "><i class="icon-search"></i></button>   
               </div> <!-- .input-group -->
           </form>
-
-          <!-- <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-          </form> -->
         </div><!--/.navbar-collapse -->
 
       </div>
