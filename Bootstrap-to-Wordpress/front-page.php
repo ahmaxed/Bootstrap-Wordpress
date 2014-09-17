@@ -1,18 +1,5 @@
 <?php get_header(); ?>
 
-    <!-- Main jumbotron for a pfrimary marketing message or call to action -->
-    <!--  <div class="jumbotron">
-      <div class="container">
-      
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-          <?php the_content(); ?>
-    
-        <?php endwhile; endif; ?>
-
-      </div>
-    </div> --> 
-    
     <?php
 
       $args = array(
@@ -56,17 +43,6 @@
           </a></h1>
 
             <a class="readmore" href="<?php the_permalink(); ?>"><button type="button" class="btn btn-default">Read More</button></a>
-
-            
-            <!-- <div class="container">
-              
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 left-align">
-                  <?php the_excerpt(); ?>
-
-                </div>
-              </div>
-            </div> -->
           </div>
 
         </div>
@@ -84,97 +60,76 @@
       </a>
     </div>
   
-    <!-- Main jumbotron for a pfrimary marketing message or call to action -->
-    <!--  <div class="jumbotron">
-      <div class="container">
-      
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-          <?php the_content(); ?>
-    
-        <?php endwhile; endif; ?>
-
-      </div>
-    </div> --> 
+    <!--social and newsletter-->
     <div class="container">         
       <div class="row">
-        <div class="col-md-6 center">
+        <div class="  col-xs-12 col-sm-3 col-md-4  col-lg-5 center ">
           
-            <h1><a href="#"><i class="fa fa-facebook-square"></i></a> 
+            <h1 class="no-top"><a href="#"><i class="fa fa-facebook-square"></i></a> 
                 <a href="#"><i class="fa fa-twitter-square"></i></a>
                 <a href="#"><i class="fa fa-envelope-square"></i></a> </h1>
             
         </div>
-        <div class="col-md-6">
-          <form class="navbar-form navbar-left center" role="search">
-            <div class="form-group col-lg-12 ">
-              <input type="text" class="form-control col-xs-12" placeholder="Your Email Address">
-              <button type="submit" class="btn btn-primary col-xs-12">Subscribe to Newsletter</button>
-            </div>
-            
-          </form>
-        </div>
+       <form class=" form-inline  col-xs-12 col-sm-9 col-md-8 col-lg-6" role="form">
+              <input type="text" class="form-control col-xs-12 col-sm-7 col-md-7" placeholder="Enter Your Email">
+              <button type="submit" class="btn btn-primary subscribe col-xs-12 col-sm-5 col-md-4">Subscribe to Newsletter</button>
+        </form>
       </div>
     </div> 
 
-    
-
-    <div class="container reading-field">
+    <div class="container ">
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row reading-field">
+        
         <div class="col-md-4">
-          <div><h2>Books<h2></div>
+          <div><h2 class="center">Recent<h2></div>
+          <?php
+          $postslist = get_posts('numberposts=2&category=-5');
+          foreach ($postslist as $post) :
+            setup_postdata($post);
+          ?>
+          <div class="post"><h3 class="center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            
+            <p> <?php the_excerpt(); ?> <p>
 
+          </div>
+          <?php endforeach ?>
+
+        </div>
+        <div class="col-md-4">
+          <div><h2 class="center">Media<h2></div>
+          <?php
+          $postslist = get_posts('numberposts=2&offset=0&category=5');
+          foreach ($postslist as $post) :
+            setup_postdata($post);
+          ?>
+          <div class="post center"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          
+            <p> <?php the_excerpt(); ?> <p>
+        
+          </div>
+          <?php endforeach ?>
+
+        </div>
+        <div class="col-md-4">
+          <div><h2 class="center">Books<h2></div>
           <?php $args=array('post_type'=>'testimonials', 'orderby'=>'rand', 'posts_per_page'=>'2'); ?>
           <?php
           $postslist = get_posts('post_type=book&orderby=rand&numberposts=2');
           foreach ($postslist as $post) :
             setup_postdata($post);
           ?>
-          <div class="post col-md-12 ">
-            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          <div >
+            <h3 class="center"><a class="center"href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           </div>
-
-          <div class="col-md-12 portfolio-image ">
+          <div class="col-md-12 portfolio-image  center">
           <?php
             $thumbnail_id = get_post_thumbnail_id(); 
             $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
           ?>
-
-          <p><a href="<?php the_permalink(); ?>"><img  class="book-main" src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title();?> graphic"></a></p>
-         
+          <p><a   href="<?php the_permalink(); ?>"><img  class="book-main" src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title();?> graphic"></a></p>
           </div>
           <?php endforeach ?>
-
-        </div>
-        <div class="col-md-4">
-          <div><h2>Recent<h2></div>
-          <?php
-          $postslist = get_posts('numberposts=2&category=-5');
-          foreach ($postslist as $post) :
-            setup_postdata($post);
-          ?>
-          <div class="post"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-            
-            <p> <?php the_excerpt(); ?> <p>
-
-          </div>
-          <?php endforeach ?>
-
-        </div>
-        <div class="col-md-4">
-          <div><h2>Media<h2></div>
-          <?php
-          $postslist = get_posts('numberposts=2&offset=0&category=5');
-          foreach ($postslist as $post) :
-            setup_postdata($post);
-          ?>
-          <div class="post"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          
-            <p> <?php the_excerpt(); ?> <p>
-        
-        </div>
-        <?php endforeach ?>
 
         </div>
       </div>

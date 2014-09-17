@@ -106,11 +106,22 @@ a.left.carousel-control{
 	border-top-right-radius:.5em;
 }
 
-
+.no-top{
+	margin-top: 0;
+}
 .jumbotron{
 	background-color: rgba(0, 0, 0, 0);
 }
 
+.forma{
+	max-width: 200px;
+}
+
+
+
+.form-control{
+	margin-right: 3px;
+}
 .carousel-control.left, .carousel-control.right {
     background-image: none;
 }
@@ -170,9 +181,7 @@ a.left.carousel-control{
 	background-color: rgb(221, 221, 221);
 }
 
-.forma{
-	max-width: 200px;
-}
+
 
 .center{
 	text-align: center;
@@ -210,7 +219,8 @@ article.post {
 
 .book-main{
 
-max-height: 200px;
+max-height: 230px;
+
 }
 
 @media (max-width:540px) {

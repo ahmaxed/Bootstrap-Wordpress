@@ -30,9 +30,8 @@
             <span class="icon-bar"></span>
           </button>
           
-          <div class="row">
+      
             <a class="navbar-brand main-logo " href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a>
-          </div>
           
 
 
