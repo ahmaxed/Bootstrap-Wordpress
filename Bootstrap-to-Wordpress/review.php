@@ -56,7 +56,6 @@
               ?>
               <p><a   href="<?php the_permalink(); ?>"><img  class="book-main" src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title();?> graphic"></a></p>
             </div>
-          
           </div>
           <?php endforeach ?>
 
