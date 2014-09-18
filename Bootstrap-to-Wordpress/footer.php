@@ -1,8 +1,9 @@
       <hr>
-
-      <footer>
+      <div class="row">
+      <footer class="center">
         <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
       </footer>
+      </div>
     </div> <!-- /container -->
 
 
@@ -15,9 +16,7 @@
 	      </div>
 	      <div class="modal-body">
 	      	<?php 
-
 				if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); }
-
 	      	?>
 	      </div>
 	      <div class="modal-footer">
