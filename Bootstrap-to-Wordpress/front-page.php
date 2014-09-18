@@ -63,16 +63,16 @@
     <!--social and newsletter-->
     <div class="container">         
       <div class="row">
-        <div class="  col-xs-12 col-sm-3 col-md-4  col-lg-5 center ">
+        <div class="  col-xs-12 col-sm-3 col-sm-offset-1 col-md-4 col-md-offset-1  col-lg-4 col-lg-offset-1 center ">
           
             <h1 class="no-top"><a href="#"><i class="fa fa-facebook-square"></i></a> 
                 <a href="#"><i class="fa fa-twitter-square"></i></a>
                 <a href="#"><i class="fa fa-envelope-square"></i></a> </h1>
             
         </div>
-       <form class=" form-inline  col-xs-12 col-sm-9 col-md-8 col-lg-6" role="form">
+       <form class=" form-inline subscribe col-xs-12 col-sm-8 col-md-7 col-lg-6 " role="form">
               <input type="text" class="form-control col-xs-12 col-sm-7 col-md-7" placeholder="Enter Your Email">
-              <button type="submit" class="btn btn-primary subscribe col-xs-12 col-sm-5 col-md-4">Subscribe to Newsletter</button>
+              <button type="submit" class="btn btn-primary  col-xs-12 col-sm-5 col-md-4">Subscribe to Newsletter</button>
         </form>
       </div>
     </div> 
