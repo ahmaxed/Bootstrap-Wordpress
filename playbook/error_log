@@ -1,0 +1,6 @@
+[25-Jun-2013 01:58:54 America/Chicago] PHP Fatal error:  Call to undefined function trailingslashit() in /home/mythemes/public_html/demo/wp-content/themes/playbook/options/options.php on line 5
+[07-Aug-2013 17:55:43 America/Chicago] PHP Fatal error:  Call to undefined function get_option() in /home/mythemes/public_html/demo/wp-content/themes/playbook/index.php on line 1
+[30-Jan-2014 19:55:01 America/Chicago] PHP Fatal error:  Call to undefined function get_option() in /home/s2q97mi5/public_html/demo/wp-content/themes/playbook/index.php on line 1
+[21-Mar-2014 01:44:56 America/Chicago] PHP Fatal error:  Call to undefined function get_option() in /home/s2q97mi5/public_html/demo/wp-content/themes/playbook/index.php on line 1
+[17-Jun-2014 00:14:48 America/Chicago] PHP Fatal error:  Call to undefined function get_option() in /home/s2q97mi5/public_html/demo/wp-content/themes/playbook/index.php on line 1
+[17-Jun-2014 00:18:49 America/Chicago] PHP Fatal error:  Call to undefined function get_option() in /home/s2q97mi5/public_html/demo/wp-content/themes/playbook/index.php on line 1

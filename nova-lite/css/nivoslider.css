@@ -1,0 +1,220 @@
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+.theme-default .nivoSlider {
+	position:relative;
+	background:#fff url(../images/loading.gif) no-repeat 50% 50%;
+}
+.theme-default .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.theme-default .nivo-controlNav {
+	text-align: center;
+	padding: 20px 0;
+}
+.theme-default .nivo-controlNav a {
+	display:inline-block;
+	width:22px;
+	height:22px;
+	background:url(../images/nivoslider/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin: 0 2px;
+}
+.theme-default .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.theme-default .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../images/nivoslider/arrows.png) no-repeat #333;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0.7;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.theme-default .nivo-directionNav a:hover {
+	background-color:#000;
+}
+
+
+.theme-default a.nivo-nextNav {
+	background-position:-30px 0;
+}
+.theme-default .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+    color:#fff;
+}
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+	width: 100%;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
+	width: auto;
+	height: auto;
+	background: none;
+	margin-bottom: 5px;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+	display: block;
+	width: 120px;
+	height: auto;
+} 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:auto;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+	width:auto;
+	height:auto;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	font-family: 'Roboto Slab',Verdana, Geneva, sans-serif;
+	position:absolute;
+	bottom:0px;
+	background:#333;
+	z-index:8;
+	opacity: 0.8;
+	overflow: hidden;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	color:#fff;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+}
+.nivo-caption:hover {
+	background:#000;
+}
+
+.nivo-caption h4 {
+	font-family: 'Roboto Slab',Verdana, Geneva, sans-serif;
+}
+.nivo-caption a {
+	border:none !important;
+	outline:none !important;
+	text-decoration:none !important;
+	padding: 25px 40px;
+	display:block;
+	font-size:18px;
+}
+
+.span3 .nivo-caption a,
+.span4 .nivo-caption a,
+.span6 .nivo-caption a {
+	padding: 12.5px 20px;
+	font-size:14px;
+}
+
+
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	bottom:30px;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	right:60px;
+}
+.nivo-nextNav {
+	right:30px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+@media screen and (min-width : 0px) and (max-width : 768px)  {	
+
+	.nivo-caption a,
+	.span3 .nivo-caption a,
+	.span4 .nivo-caption a,
+	.span6 .nivo-caption a {
+		padding: 12.5px 20px !important;
+		font-size:14px;
+	}
+
+}

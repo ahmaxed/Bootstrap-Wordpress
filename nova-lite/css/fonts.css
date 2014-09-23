@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Montez';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/Montez.eot');
+  src: url('../font/Montez.eot?#iefix') format('embedded-opentype');
+  src: local('Montez'), local('Montez-Regular'), url(../font/Montez.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/Oxygen.eot');
+  src: url('../font/Oxygen.eot?#iefix') format('embedded-opentype');
+  src: local('Oxygen'), local('Oxygen-Regular'), url(../font/Oxygen.woff) format('woff');
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/Yanone-Kaffeesatz.eot');
+  src: url('../font/Yanone-Kaffeesatz.eot?#iefix') format('embedded-opentype');
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(../font/Yanone-Kaffeesatz.woff) format('woff');
+}

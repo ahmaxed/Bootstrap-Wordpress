@@ -1,0 +1,412 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: lobster\n"
+"POT-Creation-Date: 2013-10-20 14:53-0000\n"
+"PO-Revision-Date: 2013-10-20 14:53-0000\n"
+"Last-Translator: Ruairi Phelan <rory@cyberdesigncraft.com>\n"
+"Language-Team: Ruairi Phelan <rory@cyberdesigncraft.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:13
+msgid "404 Error"
+msgstr ""
+
+#: ../404.php:16
+msgid "Sorry. We can't seem to find the page you're looking for."
+msgstr ""
+
+#: ../404.php:18
+msgid "Please use the search form above and try again."
+msgstr ""
+
+#: ../archive.php:27
+#, php-format
+msgid "Author Archive for %s"
+msgstr ""
+
+#: ../archive.php:29
+#, php-format
+msgid "Tag Archive for %s"
+msgstr ""
+
+#: ../archive.php:31
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../archive.php:33
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../archive.php:35
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../archive.php:35
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../archive.php:37
+msgid "Blog Archives"
+msgstr ""
+
+#: ../comments.php:29
+#, php-format
+msgid "1 comment for &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments for &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:40
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:41
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:42
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:51
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-aside.php:13
+msgid "Aside"
+msgstr ""
+
+#: ../content-aside.php:16 ../content-audio.php:15 ../content-image.php:19
+#: ../content-link.php:16 ../content-quote.php:17 ../content-status.php:23
+#: ../content-video.php:15 ../content.php:34 ../functions.php:293
+#: ../page.php:23
+msgid "Read more &#133;"
+msgstr ""
+
+#: ../content-footer.php:15
+msgid "Pages:"
+msgstr ""
+
+#: ../content-footer.php:16 ../functions.php:226 ../functions.php:249
+msgid "(edit)"
+msgstr ""
+
+#: ../content-footer.php:17
+msgid "Tags:"
+msgstr ""
+
+#: ../content-header.php:21
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: ../content-header.php:22
+#, php-format
+msgid "Posts by %s"
+msgstr ""
+
+#: ../content-header.php:28
+msgid "on"
+msgstr ""
+
+#: ../content-header.php:38
+msgid "0 Comments"
+msgstr ""
+
+#: ../content-header.php:38
+msgid "1 Comment"
+msgstr ""
+
+#: ../content-header.php:38
+msgid "% Comments"
+msgstr ""
+
+#: ../content-link.php:13
+msgid "Link"
+msgstr ""
+
+#: ../content-none.php:11
+msgid "Nothing found"
+msgstr ""
+
+#: ../content-none.php:14
+msgid "No results were found. Please try again."
+msgstr ""
+
+#: ../content-status.php:14
+msgid "Status"
+msgstr ""
+
+#: ../content-status.php:20
+#, php-format
+msgid "Posted on %1$s at %2$s"
+msgstr ""
+
+#: ../footer.php:34
+#, php-format
+msgid "%s created by %s."
+msgstr ""
+
+#: ../functions.php:95
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:144
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../functions.php:174
+msgid "Posts navigation"
+msgstr ""
+
+#: ../functions.php:176
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../functions.php:180
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../functions.php:225
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:230
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:249
+msgid "Pingback:"
+msgstr ""
+
+#: ../index.php:32
+msgid "No posts to display"
+msgstr ""
+
+#: ../index.php:35
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr ""
+
+#: ../search.php:19
+msgid " search results for"
+msgstr ""
+
+#: ../sidebar-second.php:22
+msgid "Archives"
+msgstr ""
+
+#: ../sidebar.php:21
+msgid "Meta"
+msgstr ""
+
+#: ../single.php:19
+msgid "Post navigation"
+msgstr ""
+
+#: ../single.php:23
+msgid "&larr; Previous Image"
+msgstr ""
+
+#: ../single.php:25
+msgid "Next Image &rarr;"
+msgstr ""
+
+#: ../single.php:29
+msgid "&larr; %title"
+msgstr ""
+
+#: ../single.php:31
+msgid "%title &rarr;"
+msgstr ""
+
+#: ../inc/custom-header.php:48
+msgctxt "header image description"
+msgid "Pattern One"
+msgstr ""
+
+#: ../inc/custom-header.php:53
+msgctxt "header image description"
+msgid "Pattern Two"
+msgstr ""
+
+#: ../inc/custom-header.php:58
+msgctxt "header image description"
+msgid "Pattern Three"
+msgstr ""
+
+#: ../inc/custom-metaboxes.php:18
+msgid "Home Page Alignment"
+msgstr ""
+
+#: ../inc/custom-metaboxes.php:27
+msgid "Left"
+msgstr ""
+
+#: ../inc/custom-metaboxes.php:29
+msgid "Right"
+msgstr ""
+
+#: ../inc/theme-options.php:125
+msgid "Layout"
+msgstr ""
+
+#: ../inc/theme-options.php:136
+msgid "Site Width"
+msgstr ""
+
+#: ../inc/theme-options.php:142
+msgid "1200px"
+msgstr ""
+
+#: ../inc/theme-options.php:143
+msgid "960px"
+msgstr ""
+
+#: ../inc/theme-options.php:154
+msgid "Site Layout"
+msgstr ""
+
+#: ../inc/theme-options.php:160
+msgid "1 Sidebar - Left"
+msgstr ""
+
+#: ../inc/theme-options.php:161
+msgid "1 Sidebar - Right"
+msgstr ""
+
+#: ../inc/theme-options.php:162
+msgid "No Sidebars"
+msgstr ""
+
+#: ../inc/theme-options.php:186
+msgid "Main Content"
+msgstr ""
+
+#: ../inc/theme-options.php:201
+msgid "Post Content Display"
+msgstr ""
+
+#: ../inc/theme-options.php:207
+msgid "Teaser Excerpt"
+msgstr ""
+
+#: ../inc/theme-options.php:208
+msgid "Full Content"
+msgstr ""
+
+#: ../inc/theme-options.php:219
+msgid "Display Home Page Top Widget Area"
+msgstr ""
+
+#: ../inc/theme-options.php:233
+msgid "Display Home Page Posts"
+msgstr ""
+
+#: ../inc/theme-options.php:242
+msgid "Jumbo Headline"
+msgstr ""
+
+#: ../inc/theme-options.php:253
+msgid "Jumbo Headline Title"
+msgstr ""
+
+#: ../inc/theme-options.php:267
+msgid "Jumbo Headline Text"
+msgstr ""
+
+#: ../inc/theme-options.php:276
+msgid "Posts"
+msgstr ""
+
+#: ../inc/theme-options.php:287
+msgid "Display Categories"
+msgstr ""
+
+#: ../inc/theme-options.php:300
+msgid "Display Author"
+msgstr ""
+
+#: ../inc/theme-options.php:313
+msgid "Display Date"
+msgstr ""
+
+#: ../inc/theme-options.php:326
+msgid "Display Comment Count"
+msgstr ""
+
+#: ../inc/theme-options.php:334
+msgid "Custom Header Headline"
+msgstr ""
+
+#: ../inc/theme-options.php:345
+msgid "Custom Header Headline Title"
+msgstr ""
+
+#: ../inc/theme-options.php:359
+msgid "Custom Header Headline Text"
+msgstr ""
+
+#: ../inc/theme-options.php:373
+msgid "Display Custom Header"
+msgstr ""
+
+#: ../inc/widgets.php:10
+msgid "Custom Text Widget with Image"
+msgstr ""
+
+#: ../inc/widgets.php:12
+msgid "Image Text Widget"
+msgstr ""
+
+#: ../inc/widgets.php:59
+msgid "Title:"
+msgstr ""
+
+#: ../inc/widgets.php:62
+msgid "Image URL:"
+msgstr ""
+
+#: ../inc/widgets.php:67
+msgid "Automatically add paragraphs"
+msgstr ""
+
+#: ../inc/widgets.php:86
+msgid "First Sidebar"
+msgstr ""
+
+#: ../inc/widgets.php:88
+msgid ""
+"This is the first sidebar widgetized area. All defaults widgets work great "
+"here."
+msgstr ""
+
+#: ../inc/widgets.php:96
+msgid "Home Page Widgets"
+msgstr ""
+
+#: ../inc/widgets.php:98
+msgid ""
+"Widgetized area on the home page directly below the the Jumbotron (Lobster! "
+"Star) menu. Specifically designed for 3 text widgets. These widgets are "
+"turned on by default on the Theme Customizer page."
+msgstr ""

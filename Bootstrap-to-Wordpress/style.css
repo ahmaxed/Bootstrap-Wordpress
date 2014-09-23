@@ -18,11 +18,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	  background-repeat: no-repeat;
 	 position: absolute; 
 	 
-  	background-position: center;
+  	background-position: top center;
 	 min-width: 100%;
-  	min-height: 800px;
+  	min-height: 1000px;
 	 z-index: -2;
-	margin-top: -60px 
+	margin-top: -50px ;
+
 }
 
 body {
@@ -37,7 +38,7 @@ body {
 }
 
 .admin-bar .navbar-fixed-top {
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 
@@ -67,7 +68,7 @@ body {
 #carousel-example-generic {
 	vertical-align: middle;
 	height: 400px;
-	padding:  6% 0;   
+	padding:  4% 0;   
 }
 
 .carousel-indicators li {
@@ -97,13 +98,61 @@ a.left.carousel-control{
 } 
 
 
-
 /*/ theme */
+h1,
+h2,
+h3,
+h4{
+	font-family: Garamond,Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	color: rgb(60,0,0); !important;
+}
+
+
 .reading-field{
 
 	background-color: rgba(255,255,255,.60);
-	border-top-left-radius:.5em;
-	border-top-right-radius:.5em;
+	border-radius:1em
+}
+.btn-custom {
+  background-color: #bd6363;
+  border-color: #bd6363;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #b55151;
+  border-color: #a74646;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #bd6363;
+  border-color: #bd6363;
+}
+
+
+.carosel-font:hover:active {
+    text-decoration: underline;
+}
+  
+
+
+
+
+.column-background{
+	background-color: rgba(0,0,0,.03);
+	border-radius:2em;
 }
 
 .no-top{
@@ -207,6 +256,7 @@ article.post {
 	margin: 20px 0 40px;
 }
 
+img,
 .featured-image img,
 .portfolio-piece img,
 .portfolio-image img {
@@ -241,20 +291,20 @@ max-height: 230px;
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media screen and (max-width: @screen-sm-min) {
-  .row-offcanvas {
+@media screen and (max-width: 768px) {
+  /*.row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
        -moz-transition: all .25s ease-out;
             transition: all .25s ease-out;
-  }
+  }*/
 
- .navbar-header {
+/* .navbar-header {
         text-align: center;
     }
     .navbar-toggle {
         float: none;
-    }
+    }*/
   /*.row-offcanvas-right {
     right: 0;
   }
@@ -304,12 +354,23 @@ max-height: 230px;
 }*/
 
 /* Medium devices (desktops, 992px and up) */
-@media screen and (max-width: @screen-md-min){
+@media screen and (min-width: 992px){
+	.column-background{
+	background-color: rgba(0,0,0,0);
+	border-top-left-radius:0em;
+	border-top-right-radius:0em;
+	}
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media screen and (max-width: @screen-lg-min){
-
+@media screen and (min-width: 1200px){
+	.carosel-font{
+		font-size: 4em;
+	}
+	.carosel-font:hover {
+    text-decoration: underline;
+ }
+	
 }
 
