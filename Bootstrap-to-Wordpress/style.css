@@ -103,16 +103,21 @@ h1,
 h2,
 h3,
 h4{
-	font-family: Garamond,Georgia, "Times New Roman", Times, serif;
+	font-family:  Georgia, "Times New Roman", Times, serif;
 	font-weight: bold;
-	color: rgb(60,0,0); !important;
+	color: black;
 }
+p{
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+}
+
 
 
 .reading-field{
 
-	background-color: rgba(255,255,255,.60);
-	border-radius:1em
+	background-color: rgba(255,255,255,.50);
+	border-radius:1em;
 }
 .btn-custom {
   background-color: #bd6363;
@@ -146,10 +151,6 @@ fieldset[disabled] .btn-custom.active {
     text-decoration: underline;
 }
   
-
-
-
-
 .column-background{
 	background-color: rgba(0,0,0,.03);
 	border-radius:2em;
@@ -162,12 +163,19 @@ fieldset[disabled] .btn-custom.active {
 	background-color: rgba(0, 0, 0, 0);
 }
 
+.columns-top{
+	margin-top: 15px;
+}
+
 .forma{
 	max-width: 200px;
 }
 
+.title-full{
+	margin-top: 20px;
+}
 .subscribe{
-	margin-top: 2px;
+	margin-top: 10px;
 }
 
 .form-control{
@@ -191,6 +199,13 @@ fieldset[disabled] .btn-custom.active {
 
 
 /*/ --------------------------------------------navbar*/
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+                     
+	font-family:    Georgia;
+
+}
 .navbar-default {
      background-color: rgba(0,0,0,.00);
     border-color: rgba(0,0,0,.00);
@@ -291,7 +306,13 @@ max-height: 230px;
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+	.subscribe{
+		margin-top: 0px;
+	}
+	.carosel-font{
+		font-size: 3em;
+	}
   /*.row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
@@ -359,6 +380,9 @@ max-height: 230px;
 	background-color: rgba(0,0,0,0);
 	border-top-left-radius:0em;
 	border-top-right-radius:0em;
+	}
+	.carosel-font{
+		font-size: 3.7em;
 	}
 
 }

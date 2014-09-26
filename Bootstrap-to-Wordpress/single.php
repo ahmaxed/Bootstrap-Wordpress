@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
   <div class="container">   
-    <div class="row">
+    <div class="row reading-field">
       
-      <div class="col-md-9">
+      <div class="col-md-7 col-md-offset-1">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

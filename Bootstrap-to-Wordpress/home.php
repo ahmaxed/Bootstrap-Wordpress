@@ -3,7 +3,7 @@
   <div class="container reading-field">   
     <div class="row">
       
-      <div class="col-md-9">
+      <div class="col-md-7 col-md-offset-1">
 
         <div class="page-header">
           <h1><?php wp_title(''); ?></h1>

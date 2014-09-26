@@ -29,17 +29,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          
-      
-            <a class="navbar-brand main-logo " href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a>
-          
-
-
-
+          <a class="navbar-brand main-logo " href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a>
         </div>
 
         <div class="navbar-collapse collapse navbar-right">
-
           <?php 
             $args = array(
               'menu'        => 'header-menu',

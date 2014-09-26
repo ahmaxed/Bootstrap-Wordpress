@@ -34,7 +34,7 @@
 
             <div class="container">         
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="carusel-title">
 
             <?php the_title(); ?>
                 </div> 
@@ -63,23 +63,36 @@
     <!--social and newsletter-->
     <div class="container">         
       <div class="row">
-        <div class="  col-xs-12 col-sm-3 col-sm-offset-1 col-md-4 col-md-offset-1  col-lg-3 col-lg-offset-2 center ">
-          
+        <div class="col-xs-12 col-sm-3 col-md-3  col-lg-2 col-lg-offset-1 center ">
             <h1 class="no-top"><a href="#"><i class="fa fa-facebook-square"></i></a> 
                 <a href="#"><i class="fa fa-twitter-square"></i></a>
                 <a href="#"><i class="fa fa-envelope-square"></i></a> </h1>
-            
         </div>
-       <form class=" form-inline subscribe col-xs-12 col-sm-8 col-md-7 col-lg-6 " role="form">
-              <input type="text" class="form-control col-xs-12 col-sm-7 col-md-7" placeholder="Enter Your Email">
-              <button type="submit" class="btn btn-custom  col-xs-12 col-sm-5 col-md-4">Subscribe to Newsletter</button>
-        </form>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-0 col-md-3  center subscribe">
+            <button type="submit" class="btn btn-info col-xs-12 col-sm-12  col-md-12 ">
+              DONATE 
+              <a href="#">
+                <i class="fa fa-paypal"></i>
+              </a>
+              PayPal
+            </button>  
+        </div>
+        <div id="mc_embed_signup">
+          <form class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-6 form-inline subscribe " role="form" action="//normanfinkelstein.us9.list-manage.com/subscribe/post?u=284edae059d93053e3ffcc14a&amp;id=320295a52d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <input type="text" class="form-control col-xs-12 col-sm-5 col-md-12"  name="EMAIL" placeholder="Enter Your Email" id="mce-EMAIL">
+                 <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                      <div style="position: absolute; left: -5000px;"><input type="text" name="b_284edae059d93053e3ffcc14a_320295a52d" tabindex="-1" value=""></div>
+                    </div>
+                <button type="submit" class="btn btn-primary  col-xs-12 col-sm-5 col-md-5" id="mc-embedded-subscribe" name="subscribe" >Subscribe to Newsletter</button>
+          </form>
+        </div>        
       </div>
     </div> 
 
-
     <!-- three responsive columns -->
-    <div class="container ">
+    <div class="container columns-top">
       <div class="row equal reading-field">
 
         <!-- column one: recent posts -->

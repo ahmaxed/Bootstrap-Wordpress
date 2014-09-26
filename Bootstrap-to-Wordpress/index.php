@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 
-  <div class="container">   
+  <div class="container reading-field">   
     <div class="row">
-      
-      <div class="col-md-9">
+      <div class="page-header">
+            <h1><?php the_title(); ?></h1>
+          </div>
+      <div class="col-md-7 col-md-offset-1">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

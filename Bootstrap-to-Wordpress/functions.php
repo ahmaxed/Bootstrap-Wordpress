@@ -63,6 +63,10 @@ create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the 
 
 create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
 create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
+create_widget( 'Contacts Sidebar', 'contacts', 'Displays on the contacs page' );
+
+
+
 
 //	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
 //}
@@ -79,7 +83,7 @@ function custom_wp_trim_excerpt($text) {
     $text = str_replace(']]>', ']]&gt;', $text); // Replace
     
 
-    $excerpt_length = apply_filters('excerpt_length', 66); // Length
+    $excerpt_length = apply_filters('excerpt_length', 50); // Length
     $firstvid = null;
     $postcustom = get_post_custom_keys();
     if ($postcustom){
