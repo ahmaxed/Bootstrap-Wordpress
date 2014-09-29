@@ -1,4 +1,4 @@
-<div class="col-md-3 sidebar">
+<div class="col-md-12 col-md-3 sidebar">
 
 	<?php if ( ! dynamic_sidebar( 'blog' ) ): ?>
 
@@ -6,5 +6,7 @@
 	<p>Please add widgets to the blog sidebar to have them display here.</p>	
 
 	<?php endif; ?>
+
+	
 	
 </div>

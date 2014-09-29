@@ -85,7 +85,7 @@
                       <div class="response" id="mce-success-response" style="display:none"></div>
                       <div style="position: absolute; left: -5000px;"><input type="text" name="b_284edae059d93053e3ffcc14a_320295a52d" tabindex="-1" value=""></div>
                     </div>
-                <button type="submit" class="btn btn-primary  col-xs-12 col-sm-5 col-md-5" id="mc-embedded-subscribe" name="subscribe" >Subscribe to Newsletter</button>
+                <button type="submit" class="btn btn-sample  col-xs-12 col-sm-5 col-md-5" id="mc-embedded-subscribe" name="subscribe" >Subscribe to Newsletter</button>
           </form>
         </div>        
       </div>

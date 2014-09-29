@@ -28,7 +28,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
 	
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 20px;
  
 }
@@ -99,6 +99,11 @@ a.left.carousel-control{
 
 
 /*/ theme */
+.bottom{
+	margin-bottom: 20px;
+}
+
+	
 h1,
 h2,
 h3,
@@ -119,31 +124,52 @@ p{
 	background-color: rgba(255,255,255,.50);
 	border-radius:1em;
 }
-.btn-custom {
-  background-color: #bd6363;
-  border-color: #bd6363;
-}
-.btn-custom:hover,
-.btn-custom:focus,
-.btn-custom:active,
-.btn-custom.active {
-  background-color: #b55151;
-  border-color: #a74646;
-}
-.btn-custom.disabled:hover,
-.btn-custom.disabled:focus,
-.btn-custom.disabled:active,
-.btn-custom.disabled.active,
-.btn-custom[disabled]:hover,
-.btn-custom[disabled]:focus,
-.btn-custom[disabled]:active,
-.btn-custom[disabled].active,
-fieldset[disabled] .btn-custom:hover,
-fieldset[disabled] .btn-custom:focus,
-fieldset[disabled] .btn-custom:active,
-fieldset[disabled] .btn-custom.active {
-  background-color: #bd6363;
-  border-color: #bd6363;
+
+
+.btn-sample { 
+  color: #ffffff; 
+  background-color: #2B0000; 
+  border-color: #2B0000; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #ffffff; 
+  background-color: #850000; 
+  border-color: #2B0000; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #2B0000; 
+  border-color: #2B0000; 
+} 
+ 
+.btn-sample .badge { 
+  color: #2B0000; 
+  background-color: #ffffff; 
 }
 
 
@@ -384,6 +410,7 @@ max-height: 230px;
 	.carosel-font{
 		font-size: 3.7em;
 	}
+	
 
 }
 
@@ -395,6 +422,12 @@ max-height: 230px;
 	.carosel-font:hover {
     text-decoration: underline;
  }
+
+ #carousel-example-generic {
+	
+	height: 400px;
+	padding:  1% 0;   
+}
 	
 }
 
