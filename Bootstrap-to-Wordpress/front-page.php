@@ -64,9 +64,9 @@
     <div class="container">         
       <div class="row">
         <div class="col-xs-12 col-sm-3 col-md-3  col-lg-2 col-lg-offset-1 center ">
-            <h1 class="no-top"><a href="#"><i class="fa fa-facebook-square"></i></a> 
-                <a href="#"><i class="fa fa-twitter-square"></i></a>
-                <a href="#"><i class="fa fa-envelope-square"></i></a> </h1>
+            <h1 class="no-top"><a href="https://www.facebook.com/pages/Norman-Finkelstein/308949505808407"><i class="fa fa-facebook-square"></i></a> 
+                <a href="https://twitter.com/normfinkelstein"><i class="fa fa-twitter-square"></i></a>
+                <a href="http://localhost/nromanfinkelstein.com/contacts/"><i class="fa fa-envelope-square"></i></a> </h1>
         </div>
         <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-0 col-md-3  center subscribe">
             <button type="submit" class="btn btn-info col-xs-12 col-sm-12  col-md-12 ">
@@ -95,32 +95,11 @@
     <div class="container columns-top">
       <div class="row equal reading-field">
 
-        <!-- column one: recent posts -->
-        <div class="col-md-4">
-          <div class="row column-background">
-            <div>
-              <h2 class="center">Recent<h2>
-            </div>
-            <?php
-              $postslist = get_posts('numberposts=2&category=-5');
-              foreach ($postslist as $post) :
-                setup_postdata($post);
-            ?>
-            <div class="post col-sm-6 col-md-12">
-              <h3 class="center">
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-              </h3>
-              <p> <?php the_excerpt(); ?> <p>
-            </div>
-            <?php endforeach ?>
-          </div>
-        </div>
-        
         <!-- column one: books -->
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="row">
             <div>
-              <h2 class="center">Books<h2>
+              <h2 class="center"><a href="http://localhost/nromanfinkelstein.com/books-2/">BOOKS</a><h2>
             </div>
             <?php
               $args=array('post_type'=>'testimonials', 'orderby'=>'rand', 'posts_per_page'=>'2');
@@ -145,13 +124,40 @@
             </div>
             <?php endforeach ?>
           </div>
+          
+            <div class="center col-md-12"><a class="readmore" href="http://localhost/nromanfinkelstein.com/books-2/"><button type="button" class="btn btn-default"> More Books </button></a></div>
+          
         </div>
-        
-        <!-- column one: media -->
-        <div class="col-md-4">
+
+        <!-- column one: recent posts -->
+        <div class="col-md-6">
           <div class="row column-background">
             <div>
-              <h2 class="center">Media<h2>
+              <h2 class="center"><a href="http://localhost/nromanfinkelstein.com/blog/">NEW POSTINGS</a><h2>
+            </div>
+            <?php
+              $postslist = get_posts('numberposts=2&category=-5');
+              foreach ($postslist as $post) :
+                setup_postdata($post);
+            ?>
+            <div class="post col-sm-6 col-md-12">
+              <h3 class="center">
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </h3>
+              <p> <?php the_excerpt(); ?> <p>
+            </div>
+            <?php endforeach ?>
+            <div class="center col-md-12"><a class="readmore" href="http://localhost/nromanfinkelstein.com/blog/"><button type="button" class="btn btn-default"> More New Postings </button></a></div>
+          </div>
+        </div>
+        
+        
+        
+        <!-- column one: videos -->
+        <div class="col-md-3">
+          <div class="row ">
+            <div>
+              <h2 class="center"><a href="http://localhost/nromanfinkelstein.com/category/videos/">VIDEOS</a><h2>
             </div>
             <?php
               $postslist = get_posts('numberposts=2&offset=0&category=5');
@@ -166,6 +172,7 @@
             </div>
             <?php endforeach ?>
           </div>
+          <div class="center col-md-12"><a class="readmore" href="http://localhost/nromanfinkelstein.com/category/videos/"><button type="button" class="btn btn-default"> More Videos </button></a></div>
         </div>
         
       </div> <!-- end row -->
