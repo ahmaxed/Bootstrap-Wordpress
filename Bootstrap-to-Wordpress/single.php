@@ -13,23 +13,23 @@
             </div> 
 
             <?php
-              $args=array('post_type'=>'testimonials', 'orderby'=>'rand', 'posts_per_page'=>'1');
+              $args=array('post_type'=>'testimonials', 'orderby'=>'rand', 'posts_per_page'=>'2');
               $postslist = get_posts('post_type=book&orderby=rand&numberposts=2');
               foreach ($postslist as $post) :
                 setup_postdata($post);
             ?>
             
-            <div class="col-xs-6  portfolio-image  center">
+            <div class="col-xs-6 center">
             <?php
               $thumbnail_id = get_post_thumbnail_id(); 
               $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
             ?>
            
-            <p>
-              <a   href="<?php the_permalink(); ?>">
-                <img  class="book-main" src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title();?> graphic">
-              </a>
-            </p>
+              <p>
+                <a   href="<?php the_permalink(); ?>">
+                  <img  class="book-main" src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title();?> graphic">
+                </a>
+              </p>
             </div>
             <?php endforeach ?>
           </div>

@@ -34,7 +34,7 @@
 
     </div>
 
-    <div class="row">
+    <div class="row ">
 
       <?php
         $args = array( 
@@ -46,7 +46,7 @@
 
       <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-      <div class="col-xs-12 col-sm-3 portfolio-piece center">
+      <div class="col-xs-6 col-sm-3 portfolio-piece center books">
 
           <?php
             $thumbnail_id = get_post_thumbnail_id(); 
