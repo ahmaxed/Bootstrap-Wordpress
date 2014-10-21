@@ -109,7 +109,11 @@
             </div>
             <?php
               $args=array('post_type'=>'testimonials', 'orderby'=>'rand', 'posts_per_page'=>'2');
+<<<<<<< HEAD
               $postslist = get_posts('post_type=book&numberposts=1');
+=======
+              $postslist = get_posts('post_type=book&numberposts=2');
+>>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
               foreach ($postslist as $post) :
                 setup_postdata($post);
             ?>
@@ -144,12 +148,17 @@
               <h2 class="center"><a href="<?php echo get_permalink(42); ?>">NEW POSTINGS</a><h2>
             </div>
             <?php
+<<<<<<< HEAD
               $postslist = get_posts('numberposts=10&category=-9');
+=======
+              $postslist = get_posts('numberposts=2&category=-5');
+>>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
               foreach ($postslist as $post) :
                 setup_postdata($post);
             ?>
               <div class="container col-md-12">
                 <div class="post col-xs-11 col-md-12">
+<<<<<<< HEAD
                   <h3 class="">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                   </h3>
@@ -160,6 +169,12 @@
               
                   </em></p>
                   
+=======
+                  <h3 class="center">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                  </h3>
+                  <p> <?php the_excerpt(); ?> <p>
+>>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
                 </div>
               </div>
             <?php endforeach ?>
@@ -173,7 +188,11 @@
         <div class="col-md-3">
           <div class="row ">
             <div>
+<<<<<<< HEAD
               <h2 class="center"><a href="http://localhost/nromanfinkelstein.com/category/video/">VIDEOS</a><h2>
+=======
+              <h2 class="center"><a href="http://localhost/nromanfinkelstein.com/category/videos/">VIDEOS</a><h2>
+>>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
             </div>
             <?php
               $postslist = get_posts('numberposts=2&offset=0&category=9');
@@ -181,15 +200,24 @@
                 setup_postdata($post);
               ?>
 
+<<<<<<< HEAD
             <div class="post  col-sm-6 col-md-12 ">
               <h4>
+=======
+            <div class="post  col-sm-6 col-md-12 center">
+              <h3>
+>>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
               </h4>
               <p> <?php the_excerpt(); ?> <p>
             </div>
             <?php endforeach ?>
           </div>
+<<<<<<< HEAD
           <div class="center col-md-12"><a class="readmore" href="http://localhost/nromanfinkelstein.com/category/video/"><button type="button" class="btn btn-default"> More Videos </button></a></div>
+=======
+          <div class="center col-md-12"><a class="readmore" href="http://localhost/nromanfinkelstein.com/category/videos/"><button type="button" class="btn btn-default"> More Videos </button></a></div>
+>>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
         </div>
         
       </div> <!-- end row -->
