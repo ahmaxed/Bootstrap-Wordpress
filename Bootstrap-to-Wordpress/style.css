@@ -1,9 +1,9 @@
 /*
 Theme Name: Bootstrap to WordPress
 Theme URI: http://wptreehouse.com/from-bootstrap-to-wordpress
-Author: Zac Gordon
-Author URI: http://wp.zacgordon.com/
-Description: Example theme for Treehouse course on how to convert static Bootstrap site into dynamic WordPress theme
+Author: Ahmad Abdolsaheb & Zac Gordon 
+Author URI: http://abdolsa.com/
+Description: Example theme for a Bootstrap / WordPress theme
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -28,7 +28,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
 	
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 20px;
  
 }
@@ -99,6 +99,11 @@ a.left.carousel-control{
 
 
 /*/ theme */
+.bottom{
+	margin-bottom: 20px;
+}
+
+	
 h1,
 h2,
 h3,
@@ -114,36 +119,60 @@ p{
 
 
 
+
+
+
 .reading-field{
 
 	background-color: rgba(255,255,255,.50);
 	border-radius:1em;
 }
-.btn-custom {
-  background-color: #bd6363;
-  border-color: #bd6363;
-}
-.btn-custom:hover,
-.btn-custom:focus,
-.btn-custom:active,
-.btn-custom.active {
-  background-color: #b55151;
-  border-color: #a74646;
-}
-.btn-custom.disabled:hover,
-.btn-custom.disabled:focus,
-.btn-custom.disabled:active,
-.btn-custom.disabled.active,
-.btn-custom[disabled]:hover,
-.btn-custom[disabled]:focus,
-.btn-custom[disabled]:active,
-.btn-custom[disabled].active,
-fieldset[disabled] .btn-custom:hover,
-fieldset[disabled] .btn-custom:focus,
-fieldset[disabled] .btn-custom:active,
-fieldset[disabled] .btn-custom.active {
-  background-color: #bd6363;
-  border-color: #bd6363;
+
+
+.btn-sample { 
+  color: #ffffff; 
+  background-color: #2B0000; 
+  border-color: #2B0000; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #ffffff; 
+  background-color: #850000; 
+  border-color: #2B0000; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #2B0000; 
+  border-color: #2B0000; 
+} 
+ 
+.btn-sample .badge { 
+  color: #2B0000; 
+  background-color: #ffffff; 
 }
 
 
@@ -153,6 +182,7 @@ fieldset[disabled] .btn-custom.active {
   
 .column-background{
 	background-color: rgba(0,0,0,.03);
+	
 	border-radius:2em;
 }
 
@@ -185,19 +215,11 @@ fieldset[disabled] .btn-custom.active {
     background-image: none;
 }
 
-.main-logo{
-	width:124px;
-	height:40px;
-	margin-top: 5px;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	background-image: url(images/logo.png);
-	background-size: 100%;
-
-}
 
 
+/*/ --------------------------------------------navbar*/
+/*/ --------------------------------------------navbar*/
+/*/ --------------------------------------------navbar*/
 /*/ --------------------------------------------navbar*/
 .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
 .navbar .nav > li.current-menu-item > a, 
@@ -246,8 +268,28 @@ fieldset[disabled] .btn-custom.active {
 .navbar-toggle{
 	background-color: rgb(221, 221, 221);
 }
+.navbar-brand{
+	font-size: 1.3em;
+	font-family: Georgia;
+	
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
 
+.navbar-default .navbar-brand a:hover {
+    color: white;
+}
 
+/*.navbar .brand, .navbar .nav > li > a {
+    color: #D64848;
+}
+.navbar .brand, .navbar .nav > li > a:hover {
+    color: #F56E6E;
+}
+*/
+
+ .main-logo:hover { color: #FFFFFF !important; }
 
 .center{
 	text-align: center;
@@ -278,23 +320,46 @@ img,
 	max-width: 100%;
 }
 
+img{
+	height: auto;
+}
 .prev-next {
 	font-size: 24px;
 	margin-top: 30px;
+	margin-bottom: 20px;
 	text-align: left;
 }
-
+.blog-book{
+	max-height: 250px;
+}
 .book-main{
+max-height: 200px;
 
-max-height: 230px;
+}
 
+/*.book-mainly{
+min-height: 500px;
+
+}*/
+
+.portfolio-piece:nth-child(2n+1){
+    clear: left;
 }
 
 @media (max-width:540px) {
 	.portfolio-piece h4 {
 		font-size: .8em;
 	}
+
 	
+}
+
+@media (min-width:540px) {
+
+	.carosel-font{
+		font-size: 2.8em;
+	}
+
 }
 
 /*
@@ -313,67 +378,21 @@ max-height: 230px;
 	.carosel-font{
 		font-size: 3em;
 	}
-  /*.row-offcanvas {
-    position: relative;
-    -webkit-transition: all .25s ease-out;
-       -moz-transition: all .25s ease-out;
-            transition: all .25s ease-out;
-  }*/
 
-/* .navbar-header {
-        text-align: center;
-    }
-    .navbar-toggle {
-        float: none;
-    }*/
-  /*.row-offcanvas-right {
-    right: 0;
-  }
+	.portfolio-piece:nth-child(2n+1){
+    clear: none;
+	}
 
-  .row-offcanvas-left {
-    left: 0;
-  }
-
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -50%; 
-  }
-
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -50%; 
-  }
-
-  .row-offcanvas-right.active {
-    right: 50%; 
-  }
-
-  .row-offcanvas-left.active {
-    left: 50%; 
-  }
-
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 50%; 
-  }*/
+	.portfolio-piece:nth-child(4n+1){
+    clear: left;
+	}
+	.navbar-brand{
+	font-size: 2em;
+	
+	
+	}
+ 
 }
-
-/*@media (min-width:768px) {
-	.sub-menu {
-		display: none;
-		position: absolute;
-		background: #222;
-		padding: 10px 15px;
-		width: 200px;		
-	}
-
-	li:hover .sub-menu {
-		display: block;
-	}
-
-}*/
-
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px){
 	.column-background{
@@ -385,6 +404,13 @@ max-height: 230px;
 		font-size: 3.7em;
 	}
 
+	.navbar-brand{
+	font-size: 2.7em;
+	
+	
+	}
+	
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -395,6 +421,15 @@ max-height: 230px;
 	.carosel-font:hover {
     text-decoration: underline;
  }
+
+ #carousel-example-generic {
 	
+	height: 400px;
+	padding:  1% 0;   
+}
+.navbar-brand{
+	font-size: 3em;
+		
+	}	
 }
 

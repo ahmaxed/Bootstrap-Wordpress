@@ -27,6 +27,27 @@ add_action( 'wp_enqueue_scripts', 'theme_js' );
 
 //add_filter( 'show_admin_bar', '__return_false' );
 
+add_filter( 'the_content', 'clean_post_content' );
+function clean_post_content($content) {
+
+    // For individual posts and the index page
+    if ( is_single() || is_home() ) {
+
+        // Remove inline styling
+        $content = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
+
+        // Remove font tag
+        $content = preg_replace('/<font[^>]+>/', '', $content);
+
+        // Remove empty tags
+        $post_cleaners = array('<p></p>' => '', '<p> </p>' => '', '<p>&nbsp;</p>' => '', '<span></span>' => '', '<span> </span>' => '', '<span>&nbsp;</span>' => '', '<span>' => '', '</span>' => '', '<font>' => '', '</font>' => '');
+        $content = strtr($content, $post_cleaners);
+
+    }
+
+    return $content;
+}
+
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
 
@@ -63,7 +84,6 @@ create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the 
 
 create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
 create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
-create_widget( 'Contacts Sidebar', 'contacts', 'Displays on the contacs page' );
 
 
 
@@ -83,7 +103,7 @@ function custom_wp_trim_excerpt($text) {
     $text = str_replace(']]>', ']]&gt;', $text); // Replace
     
 
-    $excerpt_length = apply_filters('excerpt_length', 50); // Length
+    $excerpt_length = apply_filters('excerpt_length', 80); // Length
     $firstvid = null;
     $postcustom = get_post_custom_keys();
     if ($postcustom){

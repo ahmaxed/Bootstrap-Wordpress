@@ -6,8 +6,8 @@
 ?>
 <?php get_header(); ?>
 
-  <div class="container reading-field">   
-    <div class="row">
+  <div class="container reading-field ">   
+    <div class="row bottom">
       
       <div class="title-full col-md-12">
 
@@ -34,7 +34,7 @@
 
     </div>
 
-    <div class="row">
+    <div class="row ">
 
       <?php
         $args = array( 
@@ -46,7 +46,7 @@
 
       <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-      <div class="col-xs-3 portfolio-piece">
+      <div class="col-xs-6 col-sm-3 portfolio-piece center books">
 
           <?php
             $thumbnail_id = get_post_thumbnail_id(); 
@@ -54,7 +54,7 @@
           ?>
 
           <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title();?> graphic"></a></p>
-          <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+          <h4 class="bottom"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
       </div>
 

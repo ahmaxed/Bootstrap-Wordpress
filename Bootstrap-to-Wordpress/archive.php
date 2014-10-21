@@ -15,11 +15,11 @@
             
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <p><em>
-              By <?php the_author(); ?> 
-              on <?php echo the_time('l, F jS, Y');?>
+              
+              On <?php echo the_time('l, F jS, Y');?>
               in <?php the_category( ', ' ); ?>.
-              <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
-            </em></p>            
+              
+            </em></p>        
 
             <?php the_excerpt(); ?>
 
@@ -28,7 +28,20 @@
           </article>
 
          
-        <?php endwhile; else: ?>
+        <?php endwhile;?>
+        <ul class="pager">
+
+
+
+                  <li><?php previous_posts_link('<i class="icon-chevron-left"></i>&nbsp;Previous ') ?></li>
+                  
+                  <li><?php next_posts_link('Next &nbsp;<i class="icon-chevron-right"></i>') ?></li>
+
+
+                </ul>
+
+
+      <?php else: ?>
           
           <div class="page-header">
             <h1>Oh no!</h1>
