@@ -28,11 +28,7 @@
             </div>
             <?php endforeach ?>
 
-<<<<<<< HEAD
-            <div class="center col-md-12"><a class="readmore" href="http://localhost/nromanfinkelstein.com/category/events/"><button type="button" class="btn btn-default"> More Events </button></a></div>
-=======
-            <div class="center col-md-12"><a class="readmore" href="<?php the_permalink(); ?>"><button type="button" class="btn btn-default"> More Events </button></a></div>
->>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
+            <div class="center col-md-12"><a class="readmore" href="http://normanfinkelstein.com/category/events/"><button type="button" class="btn btn-default"> More Events </button></a></div>
 
 
       </div>

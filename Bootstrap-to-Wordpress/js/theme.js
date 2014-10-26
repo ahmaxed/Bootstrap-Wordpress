@@ -1,5 +1,1 @@
 
-
-
-
-// A $( document ).ready() block.

@@ -269,18 +269,13 @@ fieldset[disabled] .btn-sample.active {
 	background-color: rgb(221, 221, 221);
 }
 .navbar-brand{
-<<<<<<< HEAD
 	font-size: 1.3em;
-=======
-	font-size: 1.5em;
->>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
 	font-family: Georgia;
 	
 }
 .navbar-default .navbar-brand {
     color: white;
 }
-<<<<<<< HEAD
 
 .navbar-default .navbar-brand a:hover {
     color: white;
@@ -294,21 +289,6 @@ fieldset[disabled] .btn-sample.active {
 }
 */
 
-=======
-
-.navbar-default .navbar-brand a:hover {
-    color: white;
-}
-
-/*.navbar .brand, .navbar .nav > li > a {
-    color: #D64848;
-}
-.navbar .brand, .navbar .nav > li > a:hover {
-    color: #F56E6E;
-}
-*/
-
->>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
  .main-logo:hover { color: #FFFFFF !important; }
 
 .center{
@@ -323,6 +303,9 @@ fieldset[disabled] .btn-sample.active {
 
 .sidebar h3 {
 	color: #888;
+}
+#featured{
+	color: #d20000 ;
 }
 
 .widget {
@@ -341,8 +324,9 @@ img,
 }
 
 img{
-	height: auto;
+height: auto;
 }
+
 .prev-next {
 	font-size: 24px;
 	margin-top: 30px;
@@ -354,18 +338,7 @@ img{
 }
 .book-main{
 max-height: 200px;
-<<<<<<< HEAD
-
 }
-
-/*.book-mainly{
-min-height: 500px;
-
-}*/
-=======
-
-}
->>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
 
 .portfolio-piece:nth-child(2n+1){
     clear: left;
@@ -403,30 +376,11 @@ min-height: 500px;
 	.carosel-font{
 		font-size: 3em;
 	}
-<<<<<<< HEAD
-
-	.portfolio-piece:nth-child(2n+1){
-    clear: none;
-=======
 
 	.portfolio-piece:nth-child(2n+1){
     clear: none;
 	}
 
-	.portfolio-piece:nth-child(4n+1){
-    clear: left;
->>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
-	}
-	.navbar-brand{
-	font-size: 2em;
-	
-	
-	}
- 
-}
-
-
-<<<<<<< HEAD
 	.portfolio-piece:nth-child(4n+1){
     clear: left;
 	}
@@ -437,9 +391,6 @@ min-height: 500px;
 	}
  
 }
-=======
-
->>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px){
 	.column-background{
@@ -470,18 +421,6 @@ min-height: 500px;
  }
 
  #carousel-example-generic {
-<<<<<<< HEAD
-=======
-	
-	height: 400px;
-	padding:  1% 0;   
-}
-.navbar-brand{
-	font-size: 3em;
-	
-	
-	}
->>>>>>> 7180739a15fe08f37ffb64f34bb273ee1e056db0
 	
 	height: 400px;
 	padding:  1% 0;   
