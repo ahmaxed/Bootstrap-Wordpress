@@ -1,7 +1,7 @@
       <hr>
       <div class="row">
       <footer class="center">
-        <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?> - Designed by <a href="http://www.abdolsa.com/">abdolsa.com</a></p>
+        <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?> - Designed by <a href="https://tr.linkedin.com/in/abdolsa">abdolsa.com</a></p>
       </footer>
       </div>
     </div> <!-- /container -->
