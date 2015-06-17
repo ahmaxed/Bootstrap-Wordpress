@@ -14,34 +14,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 .bg {
 	background-image: url(images/bg.jpg);
-	 
-	  background-repeat: no-repeat;
-	 position: absolute; 
-	 
+	background-repeat: no-repeat;
+	position: absolute;  
   	background-position: top center;
-	 min-width: 100%;
+	min-width: 100%;
   	min-height: 1000px;
-	 z-index: -2;
+	z-index: -2;
 	margin-top: -50px ;
-
 }
-
-body {
-	
+body {	
   padding-top: 20px;
-  padding-bottom: 20px;
- 
+  padding-bottom: 20px; 
 }
-
 .navbar-inner {
     background:transparent;
 }
-
 .admin-bar .navbar-fixed-top {
 	margin-top: 20px;
 }
-
-
 
 /*/ carosel */
 .carousel-caption {
@@ -50,60 +40,43 @@ body {
 	font-weight: 500;
 	text-shadow: none;
 	margin-top: auto;
-
 	vertical-align: middle;
-	text-align: center;
-	
-
+	text-align: center;	
 }
-
-
 .carousel-inner {
 	vertical-align: middle;
-	min-height: 350px
-
-	
+	min-height: 350px	
 }
-
 #carousel-example-generic {
 	vertical-align: middle;
 	height: 400px;
 	padding:  4% 0;   
 }
-
 .carousel-indicators li {
   background-color: #999;
   background-color: rgba(70,70,70,.25);
 }
-
 .carousel-indicators .active {
   background-color: #444;
 }
-
 .left-align {
   text-align: left;
 }
-
 a.right.carousel-control{
  	color:black;
 }
-
 a.left.carousel-control{
  	color:black;
 }
-
 .carousel-indicators{
 	margin-bottom: 0px;
 	margin-top: 30px;
 } 
 
-
-/*/ theme */
+/*/ theme specific*/
 .bottom{
 	margin-bottom: 20px;
-}
-
-	
+}	
 h1,
 h2,
 h3,
@@ -116,25 +89,15 @@ p{
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 }
-
-
-
-
-
-
 .reading-field{
-
 	background-color: rgba(255,255,255,.50);
 	border-radius:1em;
 }
-
-
 .btn-sample { 
   color: #ffffff; 
   background-color: #2B0000; 
   border-color: #2B0000; 
 } 
- 
 .btn-sample:hover, 
 .btn-sample:focus, 
 .btn-sample:active, 
@@ -143,14 +106,12 @@ p{
   color: #ffffff; 
   background-color: #850000; 
   border-color: #2B0000; 
-} 
- 
+}  
 .btn-sample:active, 
 .btn-sample.active, 
 .open .dropdown-toggle.btn-sample { 
   background-image: none; 
 } 
- 
 .btn-sample.disabled, 
 .btn-sample[disabled], 
 fieldset[disabled] .btn-sample, 
@@ -168,46 +129,37 @@ fieldset[disabled] .btn-sample:active,
 fieldset[disabled] .btn-sample.active { 
   background-color: #2B0000; 
   border-color: #2B0000; 
-} 
- 
+}  
 .btn-sample .badge { 
   color: #2B0000; 
   background-color: #ffffff; 
 }
-
-
 .carosel-font:hover:active {
     text-decoration: underline;
-}
-  
+}  
 .column-background{
 	background-color: rgba(0,0,0,.03);
 	
 	border-radius:2em;
 }
-
 .no-top{
 	margin-top: 0;
 }
 .jumbotron{
 	background-color: rgba(0, 0, 0, 0);
 }
-
 .columns-top{
 	margin-top: 15px;
 }
-
 .forma{
 	max-width: 200px;
 }
-
 .title-full{
 	margin-top: 20px;
 }
 .subscribe{
 	margin-top: 10px;
 }
-
 .form-control{
 	margin-right: 3px;
 }
@@ -215,118 +167,86 @@ fieldset[disabled] .btn-sample.active {
     background-image: none;
 }
 
-
-
-/*/ --------------------------------------------navbar*/
-/*/ --------------------------------------------navbar*/
-/*/ --------------------------------------------navbar*/
-/*/ --------------------------------------------navbar*/
+/*/ navbar*/
 .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
 .navbar .nav > li.current-menu-item > a, 
-.navbar .nav > li.current-menu-ancestor > a {
-                     
-	font-family:    Georgia;
-
+.navbar .nav > li.current-menu-ancestor > a {                    
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 .navbar-default {
      background-color: rgba(0,0,0,.00);
     border-color: rgba(0,0,0,.00);
 }
-
 .navbar-default .navbar-nav > li > a {
     color: white;
     font-size: 1.2em;
 }
-
 .sub-menu li {
 	margin-bottom: 10px;
 	list-style: none;
 }
-
 .sub-menu li:last-child {
 	margin-bottom: 0;
 }
-
-.sub-menu a  {
+.sub-menu a {
 	color: #999;
 	text-decoration: none;
 }
-
-.sub-menu a:hover  {
+.sub-menu a:hover {
 	color: #fff;	
 }	
-
 .current-menu-parent li a {
 	background: inherit;
 }
-
 .current-menu-item a {
 	background-color: rgba(0,0,0,.20);
 	border-radius: 5px;
 }
-
 .navbar-toggle{
 	background-color: rgb(221, 221, 221);
 }
 .navbar-brand{
 	font-size: 1.3em;
-	font-family: Georgia;
-	
+	font-family: Georgia, "Times New Roman", Times, serif;	
 }
 .navbar-default .navbar-brand {
     color: white;
 }
-
 .navbar-default .navbar-brand a:hover {
     color: white;
 }
-
-/*.navbar .brand, .navbar .nav > li > a {
-    color: #D64848;
+.main-logo:hover { 
+	color: #FFFFFF !important; 
 }
-.navbar .brand, .navbar .nav > li > a:hover {
-    color: #F56E6E;
-}
-*/
-
- .main-logo:hover { color: #FFFFFF !important; }
-
 .center{
 	text-align: center;
 	position: center;
 }
-
 .sidebar { 
 	margin-top: 40px;
 	color: #444;
 }
-
 .sidebar h3 {
 	color: #888;
 }
 #featured{
 	color: #d20000 ;
 }
-
 .widget {
 	margin: 10px 0 30px;
 }
-
 article.post {
 	margin: 20px 0 40px;
 }
-
 img,
 .featured-image img,
 .portfolio-piece img,
 .portfolio-image img {
 	max-width: 100%;
 }
-
 img{
 height: auto;
 }
-
 .prev-next {
 	font-size: 24px;
 	margin-top: 30px;
@@ -339,34 +259,19 @@ height: auto;
 .book-main{
 max-height: 200px;
 }
-
 .portfolio-piece:nth-child(2n+1){
     clear: left;
 }
-
 @media (max-width:540px) {
 	.portfolio-piece h4 {
 		font-size: .8em;
-	}
-
-	
+	}	
 }
-
 @media (min-width:540px) {
-
 	.carosel-font{
 		font-size: 2.8em;
 	}
-
 }
-
-/*
- * Off Canvas
- * --------------------------------------------------
- */
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
@@ -376,21 +281,17 @@ max-height: 200px;
 	.carosel-font{
 		font-size: 3em;
 	}
-
 	.portfolio-piece:nth-child(2n+1){
     clear: none;
 	}
-
 	.portfolio-piece:nth-child(4n+1){
     clear: left;
 	}
 	.navbar-brand{
-	font-size: 2em;
-	
-	
-	}
- 
+	font-size: 2em;		
+	} 
 }
+
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px){
 	.column-background{
@@ -401,14 +302,9 @@ max-height: 200px;
 	.carosel-font{
 		font-size: 3.7em;
 	}
-
 	.navbar-brand{
-	font-size: 2.7em;
-	
-	
-	}
-	
-
+	font-size: 2.7em;	
+	}	
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -418,16 +314,13 @@ max-height: 200px;
 	}
 	.carosel-font:hover {
     text-decoration: underline;
- }
-
- #carousel-example-generic {
-	
+ 	}
+ 	#carousel-example-generic {	
 	height: 400px;
 	padding:  1% 0;   
-}
-.navbar-brand{
-	font-size: 3em;
-		
+	}
+	.navbar-brand{
+	font-size: 3em;		
 	}	
 }
 

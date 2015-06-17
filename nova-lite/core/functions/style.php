@@ -141,7 +141,7 @@
 
 		echo '#back-to-top a:hover, body.light #back-to-top a:hover, .pin-article .link a:hover, .pin-article .quote:hover, #searchform input[type=submit]:hover, .contact-form input[type=submit]:hover, .comment-form input[type=submit]:hover, .widget-category li a:hover, .tagcloud a:hover, .socials a:hover,.button:hover, .wp-pagenavi a:hover, .wp-pagenavi span.current, #wp-calendar #today, #wp-calendar #today a { background-color: '.novalite_setting('wip_link_color_hover').'; } ';
 
-		echo '#sidebar a:hover, .bottom a:hover, #footer a:hover, #logo a:hover, nav#mainmenu ul li a:hover, nav#mainmenu li:hover > a, nav#mainmenu ul li.current-menu-item > a,  nav#mainmenu ul li.current_page_item > a, nav#mainmenu ul li.current-menu-parent > a, nav#mainmenu ul li.current_page_ancestor > a, nav#mainmenu ul li.current-menu-ancestor > a, .pin-article h1.title a:hover, .entry-info a:hover { color: '.novalite_setting('wip_link_color_hover').'; } ';
+		echo '#sidebar a:hover, .bottom a:hover, #footer a:hover, #logo a:hover, nav#mainmenu ul li a:hover, nav#mainmenu li:hover > a, nav#mainmenu ul li.current-menu-item > a,  nav#mainmenu ul li.current_page_item > a, nav#mainmenu ul li.current-menu-parent > a, nav#mainmenu ul li.current_page_ancestor > a, nav#mainmenu ul li.current-menu-ancestor > a, .pin-article h3.title a:hover, .entry-info a:hover { color: '.novalite_setting('wip_link_color_hover').'; } ';
 
 		echo '#back-to-top a:hover { border-color: '.novalite_setting('wip_link_color_hover').'; } ';
 

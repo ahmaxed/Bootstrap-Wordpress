@@ -1,33 +1,12 @@
       <hr>
       <div class="row">
       <footer class="center">
-        <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?> - Designed by <a href="https://tr.linkedin.com/in/abdolsa">abdolsa.com</a></p>
+        <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?> - Designed by <a href="https://www.linkedin.com/pub/ahmad-abdolsaheb/46/616/4b">abdolsa.com</a></p>
       </footer>
       </div>
-    </div> <!-- /container -->
 
-
-	<div class="modal fade" id="contactForm">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title">Contact Us</h4>
-	      </div>
-	      <div class="modal-body">
-	      	<?php 
-				if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); }
-	      	?>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-
-
-    <?php wp_footer(); ?>
-    
+    <!-- container -->  
+    </div> 
+    <?php wp_footer(); ?>   
   </body>
 </html>
