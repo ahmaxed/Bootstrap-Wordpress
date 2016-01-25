@@ -1,1 +1,5 @@
  /c/xampp/htdocs/nromanfinkelstein.com/wp-content/themes
+
+/c/xampp/htdocs/nromanfinkelstein.com/wp-content/themes
+
+1103c3816ad77fd1817c77151146410e9f448857

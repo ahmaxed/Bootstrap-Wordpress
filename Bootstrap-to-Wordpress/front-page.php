@@ -100,44 +100,35 @@
     <!-- three responsive columns -->
     <div class="container columns-top">
       <div class="row equal reading-field">
-
-        <!-- column one: books -->
         <div class="col-md-3">
           <div class="row">
             <div>
-              <h2 class="center"><a href="<?php echo get_permalink(96); ?>">BOOKS</a><h2>
+              <h2 class="center"><a href="<?php echo get_permalink(96); ?>">VOICES</a><h2>
             </div>
-            <?php
-              $args=array('post_type'=>'testimonials', 'orderby'=>'rand', 'posts_per_page'=>'2');
-              $postslist = get_posts('post_type=book&numberposts=1');
-              foreach ($postslist as $post) :
-                setup_postdata($post);
-            ?>
-            
-            <div class="col-xs-12 col-md-12 center">
-            <?php
-              $thumbnail_id = get_post_thumbnail_id(); 
-              $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
-            ?>
-             <h3 id="featured">Just Released!<h3>
-            <h5>Norman Finkelstein's new book:<h5>
-            <h4 class="center">
-                <a class="center"href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-              </h4>
-            <p>
-              <a   href="<?php the_permalink(); ?>">
-
-                <!-- <?php echo $thumbnail_url[0]; ?> for echoying the related webpage-->
-                <img  class="book-mainly" src="method.jpg" alt="<?php the_title();?> graphic">
-                
-              </a>
-            </p>
-            </div>
-            <?php endforeach ?>
+              <?php
+                $postslist = get_posts('numberposts=4&category=-9');
+                foreach ($postslist as $post) :
+                  setup_postdata($post);
+              ?>              
+              <div class="col-xs-12 col-md-12 ">
+                <h4 class="">
+                  <a class=""href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </h4>
+                 <div class="row">
+                  <div class="col-xs-6 col-md-6" id="autowid">
+                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 150 ); ?>
+                  </div>
+                  <div class="col-xs-6 col-md-6" id="noleftpad">
+                   <p><em>
+                    by <?php the_author_link(); ?>              
+                    On <?php echo the_time(' F jS, Y');?>.
+                    </em></p>
+                  </div>
+                </div>
+              </div>
+              <?php endforeach ?>                      
           </div>
-          
-            <div class="center col-md-12"><a class="readmore" href="http://normanfinkelstein.com/books-2/"><button type="button" class="btn btn-default"> More Books </button></a></div>
-          
+          <div class="center col-md-12" id="topbo"><a class="readmore" href="http://normanfinkelstein.com/books-2/"><button type="button" class="btn btn-default"> More Voices </button></a></div>                      
         </div>
 
         <!-- column one: recent posts -->
@@ -179,7 +170,7 @@
               <h2 class="center"><a href="http://normanfinkelstein.com/category/video/">VIDEOS</a><h2>
             </div>
             <?php
-              $postslist = get_posts('numberposts=2&offset=0&category=9');
+              $postslist = get_posts('numberposts=4&offset=0&category=9');
               foreach ($postslist as $post) :
                 setup_postdata($post);
               ?>
