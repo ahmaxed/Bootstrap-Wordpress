@@ -106,7 +106,7 @@
               <h2 class="center"><a href="<?php echo get_permalink(96); ?>">VOICES</a><h2>
             </div>
               <?php
-                $postslist = get_posts('numberposts=4&category=-9');
+                $postslist = get_posts('numberposts=6&category=-9');
                 foreach ($postslist as $post) :
                   setup_postdata($post);
               ?>              
@@ -120,7 +120,10 @@
                   </div>
                   <div class="col-xs-6 col-md-6" id="noleftpad">
                    <p><em>
-                    by <?php the_author_link(); ?>              
+                      by
+                    <b>
+                     <?php the_author_link(); ?>
+                    </b>              
                     On <?php echo the_time(' F jS, Y');?>.
                     </em></p>
                   </div>
@@ -128,7 +131,7 @@
               </div>
               <?php endforeach ?>                      
           </div>
-          <div class="center col-md-12" id="topbo"><a class="readmore" href="http://normanfinkelstein.com/books-2/"><button type="button" class="btn btn-default"> More Voices </button></a></div>                      
+          <div class="center col-md-12" id="topbot"><a class="readmore" href="http://normanfinkelstein.com/books-2/"><button type="button" class="btn btn-default"> More Voices </button></a></div>                      
         </div>
 
         <!-- column one: recent posts -->
