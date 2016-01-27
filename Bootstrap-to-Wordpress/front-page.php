@@ -116,7 +116,7 @@
                 </h4>
                  <div class="row">
                   <div class="col-xs-6 col-md-6" id="autowid">
-                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 150 ); ?>
+                    <?php echo get_wp_user_avatar(get_the_author_meta('ID'), 150); ?>
                   </div>
                   <div class="col-xs-6 col-md-6" id="noleftpad">
                    <p><em>
