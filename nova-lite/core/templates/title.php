@@ -19,7 +19,7 @@ function novalite_get_title() {
 	
 		if ((is_home()) || (is_category()) || (is_search())): ?>
 				
-			<h1 class="title"> <a href="<?php echo get_permalink($post->ID); ?>"> <?php echo $title; ?> </a> </h1>
+			<h3 class="title"> <a href="<?php echo get_permalink($post->ID); ?>"> <?php echo $title; ?> </a> </h3>
 				
 	<?php else: ?>
 			
