@@ -110,13 +110,13 @@
                 foreach ($postslist as $post) :
                   setup_postdata($post);
               ?>              
-              <div class="col-xs-12 col-md-12 ">
+              <div class="col-xs-12 col-sm-6 col-md-12 clearfix2">
                 <h4 class="">
                   <a class=""href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </h4>
                  <div class="row">
                   <div class="col-xs-6 col-md-6" id="autowid">
-                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 150 ); ?>
+                    <?php echo get_wp_user_avatar(get_the_author_meta('ID'), 150); ?>
                   </div>
                   <div class="col-xs-6 col-md-6" id="noleftpad">
                    <p><em>
@@ -135,7 +135,7 @@
         </div>
 
         <!-- column one: recent posts -->
-        <div class="col-md-6 ">
+        <div class=" col-md-6 ">
           <div class="row column-background">
             <div>
               <h2 class="center"><a href="<?php echo get_permalink(42); ?>">NEW POSTINGS</a><h2>
@@ -178,7 +178,7 @@
                 setup_postdata($post);
               ?>
 
-            <div class="post  col-sm-6 col-md-12 ">
+            <div class="post  col-sm-6 col-md-12 clearfix2">
               <h4>
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
               </h4>
