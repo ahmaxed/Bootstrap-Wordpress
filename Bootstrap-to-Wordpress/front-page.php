@@ -103,10 +103,10 @@
         <div class="col-md-3">
           <div class="row">
             <div>
-              <h2 class="center"><a href="<?php echo get_permalink(96); ?>">VOICES</a><h2>
+              <h2 class="center"><a href="<?php echo esc_url( get_category_link( 35 )); ?>">VOICES</a><h2>
             </div>
               <?php
-                $postslist = get_posts('numberposts=6&category=-9');
+                $postslist = get_posts('numberposts=4&category=35');
                 foreach ($postslist as $post) :
                   setup_postdata($post);
               ?>              
@@ -119,19 +119,19 @@
                     <?php echo get_wp_user_avatar(get_the_author_meta('ID'), 150); ?>
                   </div>
                   <div class="col-xs-6 col-md-6" id="noleftpad">
-                   <p><em>
-                      by
-                    <b>
-                     <?php the_author_link(); ?>
-                    </b>              
-                    On <?php echo the_time(' F jS, Y');?>.
-                    </em></p>
+                    <p><em>Written by</em></p> 
+                    <h4><b><?php the_author_posts_link(); ?> </b></em></h4> 
+                    <p>
+                      <em>
+                      <?php echo the_time(' F jS');?>
+                    </em>
+                    </p>
                   </div>
                 </div>
               </div>
               <?php endforeach ?>                      
           </div>
-          <div class="center col-md-12" id="topbot"><a class="readmore" href="http://normanfinkelstein.com/books-2/"><button type="button" class="btn btn-default"> More Voices </button></a></div>                      
+          <div class="center col-md-12" id="topbot"><a class="readmore" href="<?php echo esc_url( get_category_link( 35 )); ?>"><button type="button" class="btn btn-default"> More Voices </button></a></div>                      
         </div>
 
         <!-- column one: recent posts -->
@@ -141,7 +141,7 @@
               <h2 class="center"><a href="<?php echo get_permalink(42); ?>">NEW POSTINGS</a><h2>
             </div>
             <?php
-              $postslist = get_posts('numberposts=10&category=-9');
+              $postslist = get_posts('numberposts=10');
               foreach ($postslist as $post) :
                 setup_postdata($post);
             ?>
@@ -160,7 +160,7 @@
                 </div>
               </div>
             <?php endforeach ?>
-            <div class="center col-md-12"><a class="readmore" href="http://normanfinkelstein.com/blog/"><button type="button" class="btn btn-default"> More New Postings </button></a></div>
+            <div class="center col-md-12"><a class="readmore" href="<?php echo get_permalink(42); ?>"><button type="button" class="btn btn-default"> More New Postings </button></a></div>
           </div>
         </div>
         
@@ -170,7 +170,7 @@
         <div class="col-md-3">
           <div class="row ">
             <div>
-              <h2 class="center"><a href="http://normanfinkelstein.com/category/video/">VIDEOS</a><h2>
+              <h2 class="center"><a href="<?php echo esc_url( get_category_link( 9 )); ?>">VIDEOS</a><h2>
             </div>
             <?php
               $postslist = get_posts('numberposts=4&offset=0&category=9');
@@ -186,7 +186,7 @@
             </div>
             <?php endforeach ?>
           </div>
-          <div class="center col-md-12"><a class="readmore" href="http://normanfinkelstein.com/category/video/"><button type="button" class="btn btn-default"> More Videos </button></a></div>
+          <div class="center col-md-12"><a class="readmore" href="<?php echo esc_url( get_category_link( 9 )); ?>"><button type="button" class="btn btn-default"> More Videos </button></a></div>
         </div>
         
       </div> <!-- end row -->
