@@ -52,8 +52,20 @@
           <div class="wrapper">
             <?php the_content(); ?>
           </div>
-
-          <hr>          
+          <hr> 
+          <?php if (in_category( 'voices')) { ?>
+            <div class="row">
+            <div class="col-md-3" >
+              <?php echo get_wp_user_avatar(get_the_author_meta('ID'), 150); ?>
+            </div>  
+            <div class="col-md-9" >
+              <h3><b><?php the_author_posts_link(); ?> </b></em></h3>
+              <?php echo get_the_author_meta('description'); ?>
+            </div> 
+            </div >
+          <?php } ?>
+            
+          
         <?php endwhile; else: ?>
           
           <div class="page-header">
@@ -70,5 +82,8 @@
       <?php get_sidebar( 'blog' ); ?>
 
     </div>
+    
+      
+    
 
 <?php get_footer(); ?>
